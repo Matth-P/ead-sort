@@ -12,7 +12,7 @@ public class InsertionSort implements Sorter{
             int j = i - 1;
             while(j >= 0 && sorted[j] > valor){
                 sorted[j + 1] = sorted[j];
-                j = j - 1;
+                j--;
             }
             sorted[j + 1] = valor;
         }
